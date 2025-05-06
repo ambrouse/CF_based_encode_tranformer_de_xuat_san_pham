@@ -2,4 +2,4 @@ data/data
 web/web_builder/react_web/node_modules
 web/web_builder/deep_service/data
 web/web_builder/deep_service/model
-web/web_builder/react_web/react_web/public/img
+# web/web_builder/react_web/react_web/public/img
