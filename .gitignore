@@ -1,1 +1,4 @@
 data/
+web/web_builder/react_web/node_modules
+web/web_builder/deep_service/synthetic_data_0.txt
+web/web_builder/deep_service/model_weights.weights.h5
