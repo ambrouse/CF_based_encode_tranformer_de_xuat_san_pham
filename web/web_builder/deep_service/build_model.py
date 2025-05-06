@@ -29,7 +29,7 @@ def create_tokenizer(data_):
 def create_lookup_and_tokenize():
     print("-Create lookup and tokenixe")
     try:
-        df = pd.read_csv("test.txt", delimiter="_", header=None)
+        df = pd.read_csv("data/test.txt", delimiter="_", header=None)
         lookup1_ = create_lookup(df.iloc[:,20])
         lookup2_ = create_lookup(df.iloc[:,21])
         lookup3_ = create_lookup(df.iloc[:,22])
@@ -184,7 +184,7 @@ def build_model1_():
     model_ = Model([input1_,input2_,input3_,input4_,input5_,input6_,input7_],out_full_,name="test_model")
     print("-Build model done!")
     print("-Load model")
-    model_.load_weights("model_weights.weights.h5")
+    model_.load_weights("/model/model_weights.weights.h5")
     model_.compile(optimizer=opt,loss=loss,metrics=[F1Score(),BinaryAccuracy(),Recall(),Precision()])
     print("-Load done!")
     model_.summary()
