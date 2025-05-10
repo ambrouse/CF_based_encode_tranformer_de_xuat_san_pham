@@ -8,10 +8,98 @@
 ## Thành viên thực hiện
 - Nguyễn Lê Quốc Bảo - tham gia đóng góp 100% (bản thân) (Cài đặt huấn luyện mô hình, code xử lý data, tìm kiếm nguồn data, code demo cho mô hình sau huấn luyện, viết báo cáo).
 
-## Các vị trí trong dự án
+## Các vị trí bản thân trong dự án
 - Ba (phân tích mô hình, tìm kiếm mô hình, tìm kiếm data, viết báo cáo).
 - leader (Điều hành, quản lý dự án)
 - fullstask (web)
+
+## Mô hình sử dụng và lĩnh vực 
+- Collaborative Filtering (CF) với lõi chính là lớp encode của tranformer(đồng thời áp dụng mullti embeding biểu diễn mối quan hệ trong từng ngữ cảnh của dữ liệu)
+- Lĩnh vực xử lý ngôn ngữ tự nhiên
+
+## 🧰 Các thư viện, công cụ và ngôn ngữ sử dụng trong dự án
+
+### 1. 📝 Ngôn ngữ sử dụng
+
+- Python
+- Java
+- JavaScript
+- HTML, CSS
+
+---
+
+### 2. 📚 Thư viện sử dụng
+
+- OpenCV
+- NumPy
+- TensorFlow
+- Scikit-learn
+- Pandas
+- Spring Boot
+- ReactJS
+- Flask
+
+---
+
+### 3. 🗄️ Cơ sở dữ liệu
+
+- SQL Server
+
+---
+
+### 4. 🛠️ Công cụ & IDE sử dụng
+
+- **VSCode** – Dùng cho Flask và React
+- **IntelliJ IDEA** – Dùng cho Spring Boot
+- **Jupyter Lab (Local - GPU)** – Dùng để training và tạo dữ liệu
+- **Postman** – Test API
+- **[dbdiagram.io](https://dbdiagram.io/)** – Thiết kế database
+
+## Kiến trúc mô hình, web site
+
+### Kiến trúc mô hình:
+<img src="./ai_function/result/kien_truc_mo_hinh.png" alt="Biểu đồ Loss" width="500"/>
+### Kiến trúc web:
+<img src="./ai_function/result/kien_truc_web.png" alt="Biểu đồ Loss" width="500"/>
+
+---
+
+## Loss sau 80 epochs
+<img src="./ai_function/result/train_loss-and_val_loss.png" alt="Biểu đồ Loss" width="400"/>
+
+---
+
+## Phân bố dự đoán
+<img src="./ai_function/result/phan_bo_dau_ra.png" alt="Phân bố nhãn" width="400"/>
+
+---
+
+## So sánh phân bố dự đoán và phân bố nhãn
+<img src="./ai_function/result/so_sanh_phan_phoi.png" alt="Phân bố dự đoán" width="400"/>
+
+---
+
+## Ma trận dự đoán
+<img src="./ai_function/result/confusion_matrix.png" alt="Confusion Matrix" width="400"/>
+
+---
+
+## 🎥 Video demo cho dự án
+[![Watch video](https://img.youtube.com/vi/CivdCAs3dYY/0.jpg)](https://www.youtube.com/watch?v=CivdCAs3dYY)
+
+---
+
+## 📄 Tài liệu chi tiết của dự án
+
+- 📘 [Báo cáo chi tiết dự án (Word)](report/bao_cao_nguyen_le_quoc_bao_2100004053.docx)
+- 📊 [Báo cáo tóm tắt dự án (PowerPoint)](report/bao_cao_de_xuat_san_pham_khong_theo_form_truong.pptx)
+- 📝 [Báo cáo tóm tắt dự án (PowerPoint, theo format NTTU)](report/bao_cao_de_xuat_san_pham_theo_form_truong.pptx)
+- 📄 [FSD – Mô tả chức năng hệ thống (Word)](report/mo_ta_chuc_nang(FSD).docx)
+- 🗃️ [DDD – Mô tả cơ sở dữ liệu (Word)](report/mo_ta_database(DDD).docx)
+- 📑 [API Document – Mô tả các API (Word)](report/mo_ta_api(api_document).docx)
+- 🗺️ [Sơ đồ cơ sở dữ liệu (PNG)](web_function/database/Untitled%20(1).png)
+
+---
 
 ## Hướng dẫn clone dự án
 
