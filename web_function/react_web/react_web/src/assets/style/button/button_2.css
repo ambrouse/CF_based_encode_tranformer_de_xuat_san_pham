@@ -1,0 +1,38 @@
+.button__btn2--item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button__btn2--item button{
+    padding: 10px 30px;
+    border-radius: 0px 10px 0px 10px;
+    color: rgb(0, 0, 0);
+    outline: 1px solid rgb(0, 0, 0);
+    background-color:rgb(255, 254, 254) ;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    transition: all .2s linear;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, .5);
+    cursor: pointer;
+
+    @media screen and (max-width: 900px) {
+        font-size: 14px;
+      }
+    
+    @media screen and (max-width: 700px) {
+        font-size: 12px;
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 10px;
+        padding: 3px 10px;
+    }
+}
+
+.button__btn2--item button:active{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 9px 29px;
+    transform: translateY(2px);
+    background-color: rgb(212, 209, 209);
+}

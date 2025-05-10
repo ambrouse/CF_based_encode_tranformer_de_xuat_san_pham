@@ -1,5 +1,5 @@
-data/data
-web/web_builder/react_web/node_modules
-web/web_builder/deep_service/data
-web/web_builder/deep_service/model
-web/web_builder/react_web/react_web/public/img
+ai_function/data/data
+web_function/react_web/node_modules
+web_function/deep_service/data
+web_function/deep_service/model
+web_function/react_web/react_web/public/img

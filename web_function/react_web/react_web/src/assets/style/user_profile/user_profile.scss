@@ -1,0 +1,147 @@
+@import '../varilabel_scss/varilabel';
+
+.main__profile{
+    position: relative;
+    width: 95%;
+    height: auto;
+    max-width: 1024px;
+    margin: 200px auto;
+    background-image: linear-gradient(125deg,  rgb(205,217,226),rgb(53, 52, 52));
+    border-radius: 40px 0px 40px 0px;
+    .main__profile--content{
+        width: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        .content__item{
+            width: 70%; 
+            margin-top: 40px;
+            .content__item--infor{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .infor__item{
+                    width: 90%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    max-width: 400px;
+                    .infor__item--button{
+                        width: 90%;
+                        height: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+                        p{
+                            padding: 7px 20px;
+                            background-color: black;
+                            @include responsive-font(10px,12px,14px,16px);
+                            color: white;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+                    }
+                    .infor__item--mail{
+                        width: 100%;
+                        height: 70px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .mail__content{
+                            width: 70%;
+                            p{
+                                @include responsive-font(10px,12px,14px,16px);
+                            }
+                        }
+                        .mail__btn{
+                            width: 30%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            p{
+                                padding: 7px 20px;
+                                background-color: black;
+                                border-radius: 5px;
+                                color: white;
+                                cursor: pointer;
+                                @include responsive-font(10px,12px,14px,16px);
+                                
+                            }
+                        }
+                        
+                    }
+                    .infor__item--address{
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 40px;
+                        .address__main{
+                            width: 100%;
+                            .address__main--header{
+                                width: 100%;
+                                p{
+                                    text-align: center;
+                                    @include responsive-font(10px,12px,14px,16px);
+                                }
+                            }
+                            .address__main--item{
+                                width: 100%;
+                                max-height: 300px;
+                                min-height: 100px;
+                                display: flex;
+                                flex-direction: column;
+                                overflow-y: scroll;
+                                margin-bottom: 100px;
+                                scroll-behavior: smooth;
+                                scrollbar-width: thin; 
+                                .item__content{
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 10px 0px;
+                                    p{
+                                        padding: 7px 0px;
+                                        &:nth-child(1){
+                                            width: 60%;
+                                        }
+                                        &:nth-child(2){
+                                            width: 30%;
+                                            text-align: center;
+                                            background-color: black;
+                                            color: white;
+                                            border-radius: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content__avatar{
+            height: auto;
+            margin: 0 auto;
+            .content__avatar--img{
+                position: relative;
+                width: 200px;
+                height: 200px;
+                margin-top: -40%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}

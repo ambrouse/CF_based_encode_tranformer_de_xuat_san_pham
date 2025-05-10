@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: router-server
+  config:
+    import: "configserver:http://localhost:9000"
