@@ -1,21 +1,56 @@
-## PHÁT TRIỂN HỆ THỐNG KHUYẾN NGHỊ SẢN PHẨM DỰA TRÊN COLLABORATIVE FILTERING
-<img src="./assets_readme/ChatGPT Image May 11, 2025, 12_59_35 AM.png" alt="!!err image loading." width="700"/>
+# 🛍️ PHÁT TRIỂN HỆ THỐNG KHUYẾN NGHỊ SẢN PHẨM DỰA TRÊN COLLABORATIVE FILTERING
 
-## Giới thiệu
-- Dự án hướng tới xây dựng một hệ thống gợi ý sản phẩm thông minh, giúp cá nhân hóa trải nghiệm mua sắm của từng người dùng. Thay vì chỉ dựa vào lịch sử tương tác như các hệ thống truyền thống, hệ thống này kết hợp thông tin từ cả người dùng và sản phẩm để đưa ra các gợi ý chính xác và phù hợp hơn.
-- Ý tưởng cốt lõi là thu thập và biểu diễn một nhóm gồm 30 đặc trưng, bao gồm thông tin hành vi, sở thích của người dùng và đặc điểm sản phẩm. Các đặc trưng này sau đó được kết hợp lại thành từng cặp người dùng – sản phẩm, rồi đưa vào mô hình để học cách đánh giá mức độ phù hợp giữa hai bên. Việc biểu diễn riêng biệt từng loại đặc trưng và sau đó đưa vào quá trình học sâu giúp tối ưu hóa khả năng mô tả, từ đó nâng cao chất lượng gợi ý.
+![Ảnh bìa dự án](./assets_readme/ChatGPT Image May 11, 2025, 12_59_35 AM.png)
 
-## Thành viên thực hiện
-- Nguyễn Lê Quốc Bảo - tham gia đóng góp 100% (bản thân) (Cài đặt huấn luyện mô hình, code xử lý data, tìm kiếm nguồn data, code demo cho mô hình sau huấn luyện, viết báo cáo).
+---
 
-## Các vị trí bản thân trong dự án
-- Ba (phân tích mô hình, tìm kiếm mô hình, tìm kiếm data, viết báo cáo).
-- leader (Điều hành, quản lý dự án)
-- fullstask (web)
+## 📌 Giới thiệu
 
-## Mô hình sử dụng và lĩnh vực 
-- Collaborative Filtering (CF) với lõi chính là lớp encode của tranformer(đồng thời áp dụng mullti embeding biểu diễn mối quan hệ trong từng ngữ cảnh của dữ liệu)
-- Lĩnh vực xử lý ngôn ngữ tự nhiên
+Dự án hướng tới xây dựng một **hệ thống gợi ý sản phẩm thông minh** nhằm cá nhân hóa trải nghiệm mua sắm cho từng người dùng. Thay vì chỉ dựa vào lịch sử tương tác như các hệ thống truyền thống, hệ thống này **kết hợp thông tin từ cả người dùng và sản phẩm** để đưa ra gợi ý chính xác và phù hợp hơn.
+
+🔍 **Ý tưởng cốt lõi**:
+
+- Biểu diễn dữ liệu thông qua **30 đặc trưng đầu vào**, bao gồm:
+  - Hành vi và sở thích của người dùng.
+  - Đặc điểm chi tiết của sản phẩm.
+
+- Các đặc trưng này được **kết hợp thành cặp người dùng – sản phẩm**, sau đó đưa vào mô hình để học cách đánh giá mức độ phù hợp giữa hai bên.
+
+- Việc biểu diễn riêng biệt từng loại đặc trưng trước khi đưa vào mạng học sâu giúp:
+  - Tăng khả năng mô tả ngữ cảnh.
+  - Cải thiện chất lượng gợi ý đáng kể.
+
+---
+
+## 👤 Thành viên thực hiện
+
+- **Nguyễn Lê Quốc Bảo** – đóng góp 100% các công việc:
+  - Cài đặt và huấn luyện mô hình.
+  - Xử lý và thu thập dữ liệu.
+  - Thiết kế và lập trình phần demo mô hình sau huấn luyện.
+  - Viết toàn bộ báo cáo.
+
+---
+
+## 💼 Vai trò đảm nhận trong dự án
+
+- 📊 **Phân tích – nghiên cứu mô hình**: lựa chọn kiến trúc phù hợp, tìm hiểu mô hình tiên tiến.
+- 🔍 **Tìm kiếm dữ liệu**: tổng hợp dữ liệu người dùng và sản phẩm.
+- 📑 **Viết báo cáo**: báo cáo chi tiết, trình bày kết quả và demo.
+- 🧠 **Trưởng nhóm (Leader)**: quản lý, điều phối toàn bộ tiến độ dự án.
+- 🌐 **Lập trình Fullstack Web**: xây dựng giao diện người dùng, kết nối backend và AI.
+
+---
+
+## 🤖 Mô hình sử dụng & Lĩnh vực áp dụng
+
+- **Mô hình**: Collaborative Filtering (CF) kết hợp với:
+  - Lớp **Encoder của Transformer** làm lõi chính.
+  - **Multi-embedding** để biểu diễn linh hoạt đặc trưng trong từng ngữ cảnh.
+
+- **Lĩnh vực**: Xử lý ngôn ngữ tự nhiên (NLP) ứng dụng vào dữ liệu dạng bảng và hành vi người dùng.
+
+---
 
 ## 🧰 Các thư viện, công cụ và ngôn ngữ sử dụng trong dự án
 
@@ -55,12 +90,10 @@
 - **Postman** – Test API
 - **[dbdiagram.io](https://dbdiagram.io/)** – Thiết kế database
 
-## Kiến trúc mô hình, web site
+## 🧠 Kiến trúc hệ thống
 
-### Kiến trúc mô hình:
-<img src="./ai_function/result/kien_truc_mo_hinh.png" alt="Biểu đồ Loss" width="500"/>
-### Kiến trúc web:
-<img src="./ai_function/result/kien_truc_web.png" alt="Biểu đồ Loss" width="500"/>
+- 🧩 [Kiến trúc mô hình AI](./ai_function/result/kien_truc_mo_hinh.png)
+- 🕸️ [Kiến trúc hệ thống Web](./ai_function/result/kien_truc_web.png)
 
 ---
 
