@@ -1,6 +1,6 @@
 # 🛍️ PHÁT TRIỂN HỆ THỐNG KHUYẾN NGHỊ SẢN PHẨM DỰA TRÊN COLLABORATIVE FILTERING
 
-![Ảnh bìa dự án](./assets_readme/ChatGPT Image May 11, 2025, 12_59_35 AM.png)
+<img src="./readme_assets/mau.png" alt="!!err image loading." style="width: 700px; display:block; position:relative; margin:0 auto;"/>
 
 ---
 
