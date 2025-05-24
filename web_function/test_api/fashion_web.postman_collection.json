@@ -1,0 +1,907 @@
+{
+	"info": {
+		"_postman_id": "92d73888-4e0b-4cf0-a266-3b28ebd383e1",
+		"name": "fashion_web",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38733942"
+	},
+	"item": [
+		{
+			"name": "check_config_server",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/eureka-server/default",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"eureka-server",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test gateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9003/auth-service/api/v1/test/ddddd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9003",
+					"path": [
+						"auth-service",
+						"api",
+						"v1",
+						"test",
+						"ddddd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sign-up request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_gmail\": \"exampleee@gmail.com\",\r\n  \"_name\": \"Nguyen Van AAAAAAA\",\r\n  \"_age\": 25,\r\n  \"_time_of_birth\": \"2000-08-15T10:30:00\",\r\n  \"_password\": \"12345078\",\r\n  \"_phone\": \"0987654001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9003/auth-service/api/v1/sign-up",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9003",
+					"path": [
+						"auth-service",
+						"api",
+						"v1",
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_email\": \"examplee@gmail.com\",\r\n  \"_password\": \"12345078\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9002/auth-service/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"auth-service",
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5ZmJkMDYzNy01YmI5LTQwODctOWI4NC1mNTI5YmUyZjg4MGUiLCJyb2xlcyI6WyJOZ3U_aSBkw7luZyJdLCJpYXQiOjE3NDQ5NTg0MTEsImV4cCI6MTc0NTU2MzIxMX0.p_xDK33DS9ZdSu2qUWUigWO0WoDnuWSmDkQ7OFBoh58",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/product-service/api/v1/search?_name_product=Áo&_type_product&_brand_product&_seasion_product&_style_product&_material_product&_sort_id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"product-service",
+						"api",
+						"v1",
+						"search"
+					],
+					"query": [
+						{
+							"key": "_name_product",
+							"value": "Áo"
+						},
+						{
+							"key": "_type_product",
+							"value": null
+						},
+						{
+							"key": "_brand_product",
+							"value": null
+						},
+						{
+							"key": "_seasion_product",
+							"value": null
+						},
+						{
+							"key": "_style_product",
+							"value": null
+						},
+						{
+							"key": "_material_product",
+							"value": null
+						},
+						{
+							"key": "_sort_id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search request default",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/product-service/api/v1/search-default",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"product-service",
+						"api",
+						"v1",
+						"search-default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "home page request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/product-service/api/v1/home-page",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"product-service",
+						"api",
+						"v1",
+						"home-page"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "description product request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9002/product-service/api/v1/desription-product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"product-service",
+						"api",
+						"v1",
+						"desription-product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add coment request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5ZmJkMDYzNy01YmI5LTQwODctOWI4NC1mNTI5YmUyZjg4MGUiLCJyb2xlcyI6WyJVU0VSIl0sImlhdCI6MTc0NDcxMzU1OCwiZXhwIjoxNzQ1MzE4MzU4fQ.ZAEmxk0xIz23PJycLJU7a-bV81vY3a_mjeFyzQCcCqU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id_manager_size_color\":\"1\",\r\n    \"_content\":\"test content v100\",\r\n    \"_imgs_coment\":null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9005/product-service/api/v1/coment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"product-service",
+						"api",
+						"v1",
+						"coment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete coment request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9002/product-service/api/v1/coment/c7f9d941-66a8-4705-b71c-af4cbb4a3bd6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"product-service",
+						"api",
+						"v1",
+						"coment",
+						"c7f9d941-66a8-4705-b71c-af4cbb4a3bd6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get card request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9006/card-service/api/v1/card-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"card-service",
+						"api",
+						"v1",
+						"card-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete card mini request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5ZmJkMDYzNy01YmI5LTQwODctOWI4NC1mNTI5YmUyZjg4MGUiLCJyb2xlcyI6WyJOZ3U_aSBkw7luZyJdLCJpYXQiOjE3NDQ5NTg0MTEsImV4cCI6MTc0NTU2MzIxMX0.p_xDK33DS9ZdSu2qUWUigWO0WoDnuWSmDkQ7OFBoh58",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9006/card-service/api/v1/card-user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"card-service",
+						"api",
+						"v1",
+						"card-user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update size color mini card request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id_card_mini\":\"1\",\r\n    \"_id_manager_size_color\":\"1\",\r\n    \"_count\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9006/card-service/api/v1/card-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"card-service",
+						"api",
+						"v1",
+						"card-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apply card request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5ZmJkMDYzNy01YmI5LTQwODctOWI4NC1mNTI5YmUyZjg4MGUiLCJyb2xlcyI6WyJOZ3U_aSBkw7luZyJdLCJpYXQiOjE3NDQ5NTg0MTEsImV4cCI6MTc0NTU2MzIxMX0.p_xDK33DS9ZdSu2qUWUigWO0WoDnuWSmDkQ7OFBoh58",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id_card\":\"2\",\r\n    \"_id_address\":\"4\",\r\n    \"_id_payment_method\":\"3\",\r\n    \"_phone_number\":\"   \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9006/card-service/api/v1/card-user-apply",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"card-service",
+						"api",
+						"v1",
+						"card-user-apply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add card request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5ZmJkMDYzNy01YmI5LTQwODctOWI4NC1mNTI5YmUyZjg4MGUiLCJyb2xlcyI6WyJOZ3U_aSBkw7luZyJdLCJpYXQiOjE3NDQ5NTg0MTEsImV4cCI6MTc0NTU2MzIxMX0.p_xDK33DS9ZdSu2qUWUigWO0WoDnuWSmDkQ7OFBoh58",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id_manager_size_color\":\"1\",\r\n    \"_price\":\"100000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9006/card-service/api/v1/add-card",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"card-service",
+						"api",
+						"v1",
+						"add-card"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5ZmJkMDYzNy01YmI5LTQwODctOWI4NC1mNTI5YmUyZjg4MGUiLCJyb2xlcyI6WyJOZ3U_aSBkw7luZyJdLCJpYXQiOjE3NDQ5NTg0MTEsImV4cCI6MTc0NTU2MzIxMX0.p_xDK33DS9ZdSu2qUWUigWO0WoDnuWSmDkQ7OFBoh58",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9004/user-service/api/v1/profile",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9004",
+					"path": [
+						"user-service",
+						"api",
+						"v1",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5ZmJkMDYzNy01YmI5LTQwODctOWI4NC1mNTI5YmUyZjg4MGUiLCJyb2xlcyI6WyJOZ3U_aSBkw7luZyJdLCJpYXQiOjE3NDQ5NTg0MTEsImV4cCI6MTc0NTU2MzIxMX0.p_xDK33DS9ZdSu2qUWUigWO0WoDnuWSmDkQ7OFBoh58",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_name_user\": \"Nguyen Van A\",\r\n  \"_age_user\": 28,\r\n  \"_time_of_birth_user\": \"1996-04-18T08:30:00\",\r\n  \"_phone_number\": \"0987654321\",\r\n  \"_job_user\": \"Software Engineer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9004/user-service/api/v1/profile",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9004",
+					"path": [
+						"user-service",
+						"api",
+						"v1",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update address request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5ZmJkMDYzNy01YmI5LTQwODctOWI4NC1mNTI5YmUyZjg4MGUiLCJyb2xlcyI6WyJOZ3U_aSBkw7luZyJdLCJpYXQiOjE3NDQ5NTg0MTEsImV4cCI6MTc0NTU2MzIxMX0.p_xDK33DS9ZdSu2qUWUigWO0WoDnuWSmDkQ7OFBoh58",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\":\"1\",\r\n    \"_name\":\"thien duong\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9004/user-service/api/v1/profile-address",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9004",
+					"path": [
+						"user-service",
+						"api",
+						"v1",
+						"profile-address"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add address request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5ZmJkMDYzNy01YmI5LTQwODctOWI4NC1mNTI5YmUyZjg4MGUiLCJyb2xlcyI6WyJOZ3U_aSBkw7luZyJdLCJpYXQiOjE3NDQ5NTg0MTEsImV4cCI6MTc0NTU2MzIxMX0.p_xDK33DS9ZdSu2qUWUigWO0WoDnuWSmDkQ7OFBoh58",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_name\":\"18 tan dia nguk\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9004/user-service/api/v1/profile-address",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9004",
+					"path": [
+						"user-service",
+						"api",
+						"v1",
+						"profile-address"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete address request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5ZmJkMDYzNy01YmI5LTQwODctOWI4NC1mNTI5YmUyZjg4MGUiLCJyb2xlcyI6WyJOZ3U_aSBkw7luZyJdLCJpYXQiOjE3NDQ5NTg0MTEsImV4cCI6MTc0NTU2MzIxMX0.p_xDK33DS9ZdSu2qUWUigWO0WoDnuWSmDkQ7OFBoh58",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9004/user-service/api/v1/profile-address/9f87308a-d5eb-49d6-bce4-c2ee22e8c160",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9004",
+					"path": [
+						"user-service",
+						"api",
+						"v1",
+						"profile-address",
+						"9f87308a-d5eb-49d6-bce4-c2ee22e8c160"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update email request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5ZmJkMDYzNy01YmI5LTQwODctOWI4NC1mNTI5YmUyZjg4MGUiLCJyb2xlcyI6WyJOZ3U_aSBkw7luZyJdLCJpYXQiOjE3NDQ5NTg0MTEsImV4cCI6MTc0NTU2MzIxMX0.p_xDK33DS9ZdSu2qUWUigWO0WoDnuWSmDkQ7OFBoh58",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_email\":\"examplee@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9004/user-service/api/v1/profile-email",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9004",
+					"path": [
+						"user-service",
+						"api",
+						"v1",
+						"profile-email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update img request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5ZmJkMDYzNy01YmI5LTQwODctOWI4NC1mNTI5YmUyZjg4MGUiLCJyb2xlcyI6WyJOZ3U_aSBkw7luZyJdLCJpYXQiOjE3NDQ5NTg0MTEsImV4cCI6MTc0NTU2MzIxMX0.p_xDK33DS9ZdSu2qUWUigWO0WoDnuWSmDkQ7OFBoh58",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_img_user\":null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9004/user-service/api/v1/profile-img",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9004",
+					"path": [
+						"user-service",
+						"api",
+						"v1",
+						"profile-img"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update feature click request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5ZmJkMDYzNy01YmI5LTQwODctOWI4NC1mNTI5YmUyZjg4MGUiLCJyb2xlcyI6WyJOZ3U_aSBkw7luZyJdLCJpYXQiOjE3NDQ5NTg0MTEsImV4cCI6MTc0NTU2MzIxMX0.p_xDK33DS9ZdSu2qUWUigWO0WoDnuWSmDkQ7OFBoh58",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id_manager_size_color\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9005/product-service/api/v1/desription-product-feature",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"product-service",
+						"api",
+						"v1",
+						"desription-product-feature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add img test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_img\":null,\r\n    \"_id_manager_size_color\":null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9002/product-service/api/v1/add-img",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"product-service",
+						"api",
+						"v1",
+						"add-img"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get img product test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9002/product-service/api/v1/get-img/0223be18-8304-4519-a6a0-88aaae72d549",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"product-service",
+						"api",
+						"v1",
+						"get-img",
+						"0223be18-8304-4519-a6a0-88aaae72d549"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get img coment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/product-service/api/v1/get-img-coment/615d9976-7072-43c6-83c3-4401156f4b2d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"product-service",
+						"api",
+						"v1",
+						"get-img-coment",
+						"615d9976-7072-43c6-83c3-4401156f4b2d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/product-service/api/v1/check_token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"product-service",
+						"api",
+						"v1",
+						"check_token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

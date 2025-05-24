@@ -1,0 +1,9 @@
+.text__notica{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.text__notica p{
+    font-size: 12px;
+}

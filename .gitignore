@@ -1,0 +1,8 @@
+ai_function/data/data
+ai_function/training/model_weights.weights.h5
+ai_function/training/model2_weights.weights.h5
+web_function/react_web/node_modules
+web_function/deep_service/data
+web_function/deep_service/model
+web_function/react_web/react_web/public/img
+web_function/mssql-docker
