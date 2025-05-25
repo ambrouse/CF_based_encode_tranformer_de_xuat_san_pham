@@ -14,6 +14,7 @@ services:
       - my-network
 
   configdocker:
+    image: ambrouse/configdocker:latest
     container_name: configdocker
     build:
       context: ./config_cloud_server
@@ -27,6 +28,7 @@ services:
     restart: unless-stopped
   
   ereukadocker:
+    image: ambrouse/ereukadocker:latest
     container_name: ereukadocker
     build:
       context: ./eureka_server
@@ -41,6 +43,7 @@ services:
   
   
   productservicedocker:
+    image: ambrouse/productservicedocker:latest
     container_name: productservicedocker
     build:
       context: ./product_service
@@ -54,6 +57,7 @@ services:
     restart: unless-stopped
   
   authservicedocker:
+    image: ambrouse/authservicedocker:latest
     container_name: authservicedocker
     build:
       context: ./auth_service
@@ -67,6 +71,7 @@ services:
     restart: unless-stopped
   
   cartservicedocker:
+    image: ambrouse/cartservicedocker:latest
     container_name: cartservicedocker
     build:
       context: ./card_service
@@ -80,6 +85,7 @@ services:
     restart: unless-stopped
   
   userservicedocker:
+    image: ambrouse/userservicedocker:latest
     container_name: userservicedocker
     build:
       context: ./user_service
@@ -93,6 +99,7 @@ services:
     restart: unless-stopped
 
   routerdocker:
+    image: ambrouse/routerdocker:latest
     container_name: routerdocker
     build:
       context: ./router_server
@@ -106,6 +113,7 @@ services:
     restart: unless-stopped
 
   deepservicedocker:
+    image: ambrouse/deepservicedocker:latest
     container_name: deepservicedocker
     build:
       context: ./deep_service
@@ -119,6 +127,7 @@ services:
     restart: unless-stopped
 
   reactwebdocker:
+    image: ambrouse/reactwebdocker:latest
     build:
       context: ./react_web/react_web
       dockerfile: Dockerfile
