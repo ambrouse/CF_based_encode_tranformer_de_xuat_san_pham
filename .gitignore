@@ -6,3 +6,9 @@ web_function/deep_service/data
 web_function/deep_service/model
 web_function/react_web/react_web/public/img
 web_function/mssql-docker
+web_function/auth_service/target
+web_function/card_service/target
+web_function/config_cloud_server/target
+web_function/product_service/target
+web_function/router_server/target
+web_function/user_service/target

@@ -38,7 +38,7 @@ def test():
     y_pred_test_ = model_.predict([data_x1_,data_x2_,data_x3_,data_x4_,data_x5_,data_x6_,data_x7_])
     y_pred_test_ = np.concatenate((_id,y_pred_test_),axis=1)
     predict_ = pd.DataFrame(y_pred_test_,columns=["_id","_predict"]).sort_values(by="_predict", ascending=False).iloc[0:10]
-    print(predict_)
+    
     return predict_.to_dict(orient="records")
 
 if __name__ == "__main__":

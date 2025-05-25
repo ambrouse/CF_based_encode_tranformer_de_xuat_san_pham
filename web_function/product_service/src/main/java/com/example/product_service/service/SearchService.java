@@ -142,9 +142,9 @@ public class SearchService {
                     .build();
             HistorySearchEntity _h = historySearchRepo.save(historySearchEntity);
         }else{
-            historySearchEntities.getFirst().setDaySearch(LocalDateTime.now());
-            historySearchEntities.getFirst().setContent(_content_search);
-            historySearchRepo.save(historySearchEntities.getFirst());
+            historySearchEntities.get(0).setDaySearch(LocalDateTime.now());
+            historySearchEntities.get(0).setContent(_content_search);
+            historySearchRepo.save(historySearchEntities.get(0));
         }
     }
 }

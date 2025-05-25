@@ -2,4 +2,4 @@ spring:
   application:
     name: router-server
   config:
-    import: "configserver:http://localhost:9000"
+    import: "configserver:http://configdocker:9000"

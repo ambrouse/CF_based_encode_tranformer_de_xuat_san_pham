@@ -70,6 +70,8 @@ public class FeatureService {
                     ._description(getSafeString(t.get("_description")))
                     .build();
         }).toList();
+
+        System.out.println(_features_respon);
         List<DeepRespon> _deep_respon = deepService.deep_service(ApiRespon.<HomePageDeepRespon>builder()
                 ._request(200)
                 ._request_desription("get feature api")

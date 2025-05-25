@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-@FeignClient(name = "DEEP-SERVICE",url = "http://127.0.0.1:9007")
+@FeignClient(name = "DEEP-SERVICE",url = "http://deepservicedocker:9007")
 public interface DeepService {
     @PostMapping(value = "/deep-service/api/v1/test",consumes = "application/json")
     List<DeepRespon> deep_service(@RequestBody ApiRespon<HomePageDeepRespon> _request);

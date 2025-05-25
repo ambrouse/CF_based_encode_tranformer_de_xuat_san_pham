@@ -3,7 +3,7 @@ import socket
 import threading
 import time
 
-EUREKA_SERVER = "http://localhost:8761/eureka"
+EUREKA_SERVER = "http://ereukadocker:8761/eureka"
 APP_NAME = "deep-service"
 PORT = 9007
 
@@ -46,4 +46,4 @@ def heartbeat():
             print(f"Heartbeat sent: {res.status_code}")
         except Exception as e:
             print(f"Heartbeat failed: {e}")
-        time.sleep(60)  # every 30s
+        time.sleep(10)  # every 10s
