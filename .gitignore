@@ -1,4 +1,7 @@
 ai_function/data/data
+ai_function/data/boatgame
+ai_function/data/book
+ai_function/data/movie
 ai_function/training/model_weights.weights.h5
 ai_function/training/model2_weights.weights.h5
 web_function/react_web/node_modules
