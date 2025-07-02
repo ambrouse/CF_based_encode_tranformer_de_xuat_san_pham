@@ -140,9 +140,20 @@ Dự án hướng tới xây dựng một **hệ thống gợi ý sản phẩm t
 Khi clone project từ GitHub về, bạn sẽ thiếu một số thư mục, bao gồm:
 
 - Tạo thư mục `./data/data`.
-- Tải file data training và file column về, đặt vào thư mục `./data/data`.
+- Tải file data training và file column về, đặt vào thư mục `./data/data`. //đây là bộ data thử nghiệm
 
 🔗 [Link data training](https://drive.google.com/drive/folders/10Xa5yRClfg0tcrF0EXb-o8jLLoYuYe34?usp=sharing)
+
+- Đây là 3 bộ data thực tế còn lại, dù thực tế nhưng data chỉ có tác dụng chứng minh độ tin cậy nên không hướng dẫn clone chỉ có link và kết quả, ngoài ra thì trong các folder cũng có sẵn code train. 
+
+🔗 [Link data boatgame](https://drive.google.com/drive/folders/1G4QxUP0gAadBbo2CUmTcZfjwwuPeYhOf?usp=sharing)
+<img src="./assets_readme/boatgame.png" alt="Confusion Matrix" width="400"/>
+
+🔗 [Link data movie](https://drive.google.com/drive/folders/1wEWHvzCuPMbu2-BMRl3oiJoSlq2qivve?usp=sharing)
+<img src="./assets_readme/movie.png" alt="Confusion Matrix" width="400"/>
+
+🔗 [Link data book](https://drive.google.com/drive/folders/1n2DifwBAFE1HIbkYk05lCZafFFC94suM?usp=sharing)
+<img src="./assets_readme/book.png" alt="Confusion Matrix" width="400"/>
 
 ---
 
